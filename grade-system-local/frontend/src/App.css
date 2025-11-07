@@ -1,0 +1,149 @@
+/* frontend/src/App.css */
+.App {
+  text-align: center;
+}
+
+.login-container {
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 40px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 30px 0;
+}
+
+.login-form input {
+  padding: 15px;
+  border: 2px solid #e1e5e9;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.login-form input:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+.login-form button {
+  padding: 15px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-form button:hover:not(:disabled) {
+  background-color: #2980b9;
+}
+
+.login-form button:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+.demo-accounts {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 4px solid #3498db;
+}
+
+.demo-accounts h3 {
+  margin-top: 0;
+  color: #2c3e50;
+}
+
+.demo-accounts p {
+  margin: 5px 0;
+  color: #7f8c8d;
+  font-size: 14px;
+}
+
+.student-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.student-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #e1e5e9;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.grades-section {
+  text-align: left;
+}
+
+.grades-list {
+  display: grid;
+  gap: 15px;
+}
+
+.grade-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #3498db;
+}
+
+.course-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.grade-score {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.grade-score.excellent {
+  color: #27ae60;
+}
+
+.grade-score.good {
+  color: #f39c12;
+}
+
+.grade-score.poor {
+  color: #e74c3c;
+}
+
+.grade-semester {
+  color: #7f8c8d;
+  font-size: 14px;
+}
+
+.no-grades {
+  text-align: center;
+  padding: 40px;
+  color: #7f8c8d;
+  font-style: italic;
+  background: white;
+  border-radius: 8px;
+}
